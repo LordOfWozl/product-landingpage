@@ -16,6 +16,8 @@ html, body {
   position: relative;
 }
 
+/* ----- navigation ----- */
+
 header {
     position: fixed;
     width: 100%;
@@ -31,7 +33,6 @@ header {
 }
 
 .logo {
-    width: 60vw;
     display: inline-flex;
     align-items: center;
     justify-content: start;
@@ -42,9 +43,7 @@ header {
     height: 64px;
 }
 
-#title {
-    margin: 0 10px;
-}
+
 
 nav {
   font-family: 'Roboto', sans-serif;
