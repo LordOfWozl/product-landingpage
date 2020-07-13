@@ -2,9 +2,18 @@ html, body {
     background-color: #ffffff;
 }
 
+body {
+  width: 100vw;
+  overflow-x: none;
+  box-sizing: border-box;
+}
+
+/* what is this?
 #page-wrapper {
   position: relative;
 }
+
+*/
 
 /* ----- navigation ----- */
 
@@ -50,31 +59,30 @@ a.nav-link:hover {
   color: #1500FE;
 }
 
-#content {
-    margin-top: 75px;
-}
-
 .container {
     margin: 0 auto;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1300px;
     padding: 0 20px;
 }
 
 section {
-    padding: 50px 0 0;
+    padding: 100px 0 0;
 }
 
-section > h2 {
-    text-align: center;
-    padding-bottom: 20px;
+.flex-container {
+  display: flex;
+  border: solid 1px blue;
 }
+
+
 
 h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 25px;
     letter-spacing: 0.3px; 
+    line-height: 30px; 
 }
 
 p {
@@ -82,8 +90,8 @@ p {
   font-weight: 400;
   font-size: 16px; 
   font-kerning: normal;
-  line-height: 
-  text-align: justify;
+  line-height: 22px;
+  text-align: left;
 }
 
 ul {
