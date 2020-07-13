@@ -138,6 +138,8 @@ input[type="submit"] {
     display: block;
 }
 
+/*
+
 footer {
     background-color: #eeeeee;
     display: flex;
@@ -157,6 +159,8 @@ footer > ul > li > a, footer > ul > li > a:visited {
     padding: 5px 10px;
     display: inline-block;
 }
+
+/*
 
 @media (max-width: 600px) {
     header {
@@ -183,4 +187,5 @@ footer > ul > li > a, footer > ul > li > a:visited {
         width: 100%;
     }
 }
+*/
 
