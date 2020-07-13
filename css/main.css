@@ -1,14 +1,4 @@
-
-
-
-*, *:before, *:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html, body {
-    min-width: 320px;
     background-color: #ffffff;
 }
 
@@ -42,8 +32,6 @@ header {
     width: 64px;
     height: 64px;
 }
-
-
 
 nav {
   font-family: 'Roboto', sans-serif;
