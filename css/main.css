@@ -145,54 +145,5 @@ input[type="submit"] {
 
 
 
-/*
 
-footer {
-    background-color: #eeeeee;
-    display: flex;
-    justify-content: space-around;
-    padding: 16px 32px;
-    align-items: baseline;
-}
-
-footer > ul {
-    list-style-type: none;
-    display: inline-flex;
-}
-
-footer > ul > li > a, footer > ul > li > a:visited {
-    color: #000;
-    text-decoration: none;
-    padding: 5px 10px;
-    display: inline-block;
-}
-
-/*
-
-@media (max-width: 600px) {
-    header {
-        flex-wrap: wrap;
-    }
-
-    .logo {
-        margin: 15px 0;
-        width: 100%;
-        position: relative;
-        justify-content: space-between;
-    }
-
-    #header-img {
-        width: 32px;
-        height: 32px;
-    }
-
-    #content {
-        width: 100%;
-    }
-
-    #video {
-        width: 100%;
-    }
-}
-*/
 
