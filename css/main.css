@@ -50,7 +50,7 @@ h1 {
 /* h1 fluid font-size */
 @media screen and (min-width: 300px) {
   h1 {
-    font-size: calc(55px + (100-55) * ((100vw - 300px) / (3360-300)));
+    font-size: calc(55px + (95-55) * ((100vw - 300px) / (3360-300)));
     line-height: 120%;
   }
 }
@@ -72,7 +72,7 @@ h2{
 /* h2 fluid font-size */
 @media screen and (min-width: 300px) {
   h2 {
-    font-size: calc(30px + (100-30) * ((100vw - 300px) / (3360-300)));
+    font-size: calc(30px + (45-30) * ((100vw - 300px) / (3360-300)));
     line-height: 120%;
   }
 }
@@ -107,32 +107,43 @@ img {
 2. - HEADER
 ----------------------------------------------*/
 
-
-
 header {
-    position: fixed;
-    width: 100%;
-    min-height: 60px;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 0 70px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #ffffff;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center ;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    max-width: 100%; 
+    max-height: 75px;
+    padding: ;
+    z-index: 10;
+    background-color: yellow;
 }
+
+/* -------------------------------------------
+2.1 - LOGO
+----------------------------------------------*/
 
 .logo {
-    display: inline-flex;
-    align-items: center;
-    justify-content: start;
+    display: block;
+    flex-shrink: 0;
+    max-width: 35px;
+    max-height: 35px;
+    margin-left: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-#header-img {
-    width: 64px;
-    height: 64px;
-}
+@media screen and (min-width: 300px) {
+  .logo {
+    margin-left: calc(15px + (35-15) * ((100vw - 300px) / (3360-300)));
+  }
+} 
+
+
+
 
 nav {
   font-family: 'Roboto', sans-serif;
@@ -158,14 +169,6 @@ a.nav-link:hover {
     padding: 0 20px;
 }
 
-section {
-    padding: 100px 0 0;
-}
-
-.flex-container {
-  display: flex;
-  border: solid 1px blue;
-}
 
 
 
