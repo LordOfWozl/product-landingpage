@@ -1,28 +1,42 @@
+/* -------------------------------------------
+1. - GENERAL 
+----------------------------------------------*/
+
+:root {
+    --main-color: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
-    background-color: #ffffff;
     scroll-behavior: smooth;
 }
 
-body {
-  width: 100vw;
-  overflow-x: none;
-  box-sizing: border-box;
-  display:flex;
-
+/* Offset fix for OVERLAPPING problems of FIXED HEADER and ON-PAGE links */
+:target {
+  display: block;
+  position: relative;
+  top: -20vh; /* this is the offset */
+  visibility: hidden;
 }
 
-/* 
-
-font-family: 'Merriweather', serif;
-font-family: 'Nunito Sans', sans-serif;
-
-*/
+body {
+    color: var(--main-color);
+    background-color: white;
+    transition: all 1s ease-out;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* -------------------------------------------
-
-TEXT STYLE
-
+1.1 - TEXT STYLE
 ----------------------------------------------*/
 
 h1 {
@@ -33,23 +47,19 @@ h1 {
   line-height: 110%;
 }
 
-/* fluid font-size h1 */
-
+/* h1 fluid font-size */
 @media screen and (min-width: 300px) {
   h1 {
     font-size: calc(55px + (100-55) * ((100vw - 300px) / (3360-300)));
     line-height: 120%;
   }
 }
-
 @media screen and (min-width: 1000px) {
   h1 {
     font-size: 95px;
     line-height: 110%;
   }
 }
-
-
 
 h2{
   font-family: 'Merriweather', serif;
@@ -59,15 +69,13 @@ h2{
   line-height: 100%;
 }
 
-/* fluid font-size h2 */
-
+/* h2 fluid font-size */
 @media screen and (min-width: 300px) {
   h2 {
     font-size: calc(30px + (100-30) * ((100vw - 300px) / (3360-300)));
     line-height: 120%;
   }
 }
-
 @media screen and (min-width: 1000px) {
   h2 {
     font-size: 45px;
@@ -84,6 +92,20 @@ p {
 }
 
 
+/* -------------------------------------------
+1.2 - IMAGES
+----------------------------------------------*/
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/* -------------------------------------------
+2. - HEADER
+----------------------------------------------*/
 
 
 
@@ -184,13 +206,6 @@ input[type="email"] {
 
 input[type="submit"] {
     margin-top: 8px;
-}
-
-#video {
-    width: 560px;
-    height: 315px;
-    margin: 20px auto;
-    display: block;
 }
 
 
