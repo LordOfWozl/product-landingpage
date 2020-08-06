@@ -141,26 +141,22 @@ header {
     margin-left: calc(15px + (35-15) * ((100vw - 300px) / (3360-300)));
   }
 } 
-
-
-
-
-nav {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
+@media screen and (min-width: 1000px) {
+  .logo {
+    margin-left: 35px;
+  }
 }
 
-a.nav-link {
-    color: #232021;
-    text-decoration: none;
-    padding: 5px 10px;
-    display: inline-block;
-}
 
-a.nav-link:hover {
-  color: #1500FE;
-}
+
+/* -------------------------------------------
+2.2 - NAVIGATION
+----------------------------------------------*/
+
+
+
+
+
 
 .container {
     margin: 0 auto;
@@ -174,10 +170,6 @@ a.nav-link:hover {
 
 
 
-ul {
-    list-style: outside;
-    margin-left: 1em;
-}
 
 .button {
     padding: 0 16px;
