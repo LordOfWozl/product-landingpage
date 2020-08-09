@@ -184,6 +184,20 @@ a.nav-link:hover {
 }
 
 
+/* -------------------------------------------
+2.3 - SPLASHSCREEN
+----------------------------------------------*/
+
+.intro-page{
+  background-image: url(https://images.unsplash.com/photo-1530968464165-7a1861cbaf9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80);
+  background-color: pink;
+  width: 100vw
+  height: 100vh;
+}
+
+
+
+
 
 
 .container {
