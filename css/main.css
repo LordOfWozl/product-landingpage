@@ -25,13 +25,13 @@ html {
 }
 
 body {
-    color: var(--main-color);
-    background-color: white;
-    transition: all 1s ease-out;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+  color: var(--main-color);
+  background-color: white;
+  transition: all 1s ease-out;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -65,21 +65,21 @@ h2{
   font-family: 'Merriweather', serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 45px;
-  line-height: 100%;
+  font-size: 50px;
+  line-height: 120%;
 }
 
 /* h2 fluid font-size */
 @media screen and (min-width: 300px) {
   h2 {
-    font-size: calc(30px + (45-30) * ((100vw - 300px) / (3360-300)));
+    font-size: calc(30px + (50-30) * ((100vw - 300px) / (3360-300)));
     line-height: 120%;
   }
 }
 @media screen and (min-width: 1000px) {
   h2 {
-    font-size: 45px;
-    line-height: 100%;
+    font-size: 50px;
+    line-height: 120%;
   }
 }
 
@@ -211,6 +211,49 @@ a.nav-link:hover {
 
  /* transform: translate(20%, 50%);*/
 }
+
+
+/* -------------------------------------------
+2.4 - SERVICE 
+----------------------------------------------*/
+
+.service-text{
+  text-align: center;
+  color: black;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+
+}
+
+  /* alternatively to flex:
+  margin: 100px auto;
+  width: 900px; */
+
+.service-text h2 {
+  max-width: 900px;
+  margin-top: 150px; 
+  margin-bottom: 150px;
+}
+
+@media screen and (min-width: 300px) {
+  .service-text h2 {
+    margin-top: calc(50px + (150-50) * ((100vw - 300px) / (3360-300)));
+    margin-bottom: calc(50px + (150-50) * ((100vw - 300px) / (3360-300)));
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+} 
+
+@media screen and (min-width: 1000px) {
+  .service-text h2 {
+    margin-top: 150px; 
+    margin-bottom: 150px;
+  }
+}
+
+
+
 
 
 
