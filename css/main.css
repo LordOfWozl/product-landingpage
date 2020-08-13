@@ -41,23 +41,23 @@ body {
 
 h1 {
   font-family: 'Merriweather', serif;
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
-  font-size: 95px;
-  line-height: 110%;
+  font-size: 100px;
+  line-height: 100%;
 }
 
 /* h1 fluid font-size */
 @media screen and (min-width: 300px) {
   h1 {
-    font-size: calc(55px + (95-55) * ((100vw - 300px) / (3360-300)));
-    line-height: 120%;
+    font-size: calc(55px + (100-55) * ((100vw - 300px) / (3360-300)));
+    line-height: 110%;
   }
 }
 @media screen and (min-width: 1000px) {
   h1 {
-    font-size: 95px;
-    line-height: 110%;
+    font-size: 100px;
+    line-height: 100%;
   }
 }
 
@@ -180,20 +180,17 @@ a.nav-link {
 }
 
 a.nav-link:hover {
-  color: #1500FE;
+  color: blue;
+  text-shadow: 0px 3px 8px #B0B0B0;
+  transform: scale(1.05);
+  transition: transform 330ms ease-in-out;
+
 }
 
 
 /* -------------------------------------------
 2.3 - SPLASHSCREEN
 ----------------------------------------------*/
-
-.intro-page{
-  background-image: url(https://images.unsplash.com/photo-1530968464165-7a1861cbaf9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80);
-  background-color: pink;
-  width: 100vw
-  height: 900px;
-}
 
 .hero-image {
   background-image: url("https://images.unsplash.com/photo-1530968464165-7a1861cbaf9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80"); /* The image used */
@@ -205,6 +202,15 @@ a.nav-link:hover {
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+.hero-text{
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: black;
+
+ /* transform: translate(20%, 50%);*/
+}
 
 
 
