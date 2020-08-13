@@ -192,9 +192,18 @@ a.nav-link:hover {
   background-image: url(https://images.unsplash.com/photo-1530968464165-7a1861cbaf9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80);
   background-color: pink;
   width: 100vw
-  height: 100vh;
+  height: 900px;
 }
 
+.hero-image {
+  background-image: url("https://images.unsplash.com/photo-1530968464165-7a1861cbaf9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80"); /* The image used */
+  background-color: pink; /* Used if the image is unavailable */
+  height: 100vh; /* You must set a specified height */
+  width: 100vw;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
 
 
