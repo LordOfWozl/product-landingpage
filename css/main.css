@@ -319,8 +319,8 @@ a.nav-link:hover {
 
 .feature-heading h2 {
   max-width: 900px;
-  margin-top: 200px; 
-  margin-bottom: 90px;
+  margin-top: 400px; 
+  margin-bottom: 70px;
 }
 
 .feature-group{
@@ -340,7 +340,7 @@ a.nav-link:hover {
   text-align: left;
   max-width: 400px;
   margin: 0px 40px;
-    border: 1px solid red;
+  border: 1px solid red;
 
 }
 
@@ -348,6 +348,30 @@ a.nav-link:hover {
 /* -------------------------------------------
 2.7 - TESTIMONIALS 
 ----------------------------------------------*/
+
+.testimonial-heading{
+  text-align: center;
+  color: black;
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+  /* alternatively to flex:
+  margin: 100px auto;
+  width: 900px; */
+
+.testimonial-heading h2 {
+  max-width: 900px;
+  margin-top: 400px; 
+  margin-bottom: 30px;
+}
+
+.testimonial-group{
+  display: flex;
+  align-items: center;
+  border: 3px solid green;
+}
 
 iframe {
     max-width: 100%;
@@ -357,17 +381,62 @@ iframe {
 }
 
 /* -------------------------------------------
-2.8 - TESTIMONIALS 
+2.8 - NEWSLETTER 
 ----------------------------------------------*/
 
-
-.container {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 20px;
+.newsletter-group{
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  border:3px solid black;
 }
 
+.newsletter-group h2{
+  max-width: 900px;
+  margin-top: 240px; 
+  margin-bottom: 20px;
+}
+
+.newsletter-group p{
+  margin-bottom: 30px;
+}
+
+.container{
+  height: 69px;
+  border:3px solid blue;
+  display: flex;
+  flex-direction: row nowrap;
+  align-items: flex-start;
+
+}
+
+input[type=email]{
+  width: 557px;
+  height: 70px;
+  padding: 12px; /* Some padding */  
+  border: 1px solid #000000; /* black border */
+  border-radius: 0px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin: 0px;
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  font: 'Nunito Sans', sans-serif;
+  font-weight: normal;
+  font-size: 20px; 
+  line-height: 160%;
+}
+
+input[type=submit]{
+  background-color: white;
+  width: 241px;
+  height: 70px;
+  border: 1px solid #000000; /* black border */
+  border-radius: 0px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin: 0px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: normal;
+  font-size: 19px; 
+}
 
 
 
@@ -386,27 +455,5 @@ iframe {
     color: #fff;
     cursor: pointer;
 }
-
-.button:hover {
-    background-color: #3f51b5;
-}
-
-input[type="email"] {
-    width: 100%;
-    min-height: 40px;
-    max-width: 480px;
-    padding: 4px 8px;
-    border: 1px solid #c0c0c0;
-    border-radius: 4px;
-    display: block;
-    margin: 5px auto;
-}
-
-input[type="submit"] {
-    margin-top: 8px;
-}
-
-
-
 
 
