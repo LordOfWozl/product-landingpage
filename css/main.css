@@ -85,10 +85,10 @@ h2{
 
 
 p {
-  font-family: 'Nunito', sans-serif;
-  font-style: normal;
-  font-size: 16px; 
-  line-height: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: normal;
+  font-size: 21px; 
+  line-height: 160%;
 }
 
 
@@ -219,11 +219,9 @@ a.nav-link:hover {
 
 .service-text{
   text-align: center;
-  color: black;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
-
+  border: 1px solid red;
 }
 
   /* alternatively to flex:
@@ -252,10 +250,79 @@ a.nav-link:hover {
   }
 }
 
+/* -------------------------------------------
+2.5 - PRODUCTS 
+----------------------------------------------*/
+
+.img-product-group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+}
+
+.img-product {
+  margin-bottom: 70px;
+}
+
+.portrait{
+  max-width: 600px;
+  max-height: 800px;
+}
+
+.landscape{
+  max-width: 800px;
+  max-height: 600px;
+}
+
+.product-quote {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: left;
+  margin: 0 auto;
+  padding: 1rem 0 0 0;
+  text-align: left;
+  max-width: 505px;
+  border: 1px solid blue;
+
+}
+
+.product-quote h2{
+  margin-bottom: 15px;
+}
 
 
+/* -------------------------------------------
+2.5 - FEATURES 
+----------------------------------------------*/
+.feature-text{
+  text-align: center;
+  color: black;
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+}
 
+  /* alternatively to flex:
+  margin: 100px auto;
+  width: 900px; */
 
+.feature-text h2 {
+  max-width: 900px;
+  margin-top: 150px; 
+  margin-bottom: 150px;
+}
+
+.feature-group{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 200px;
+
+}
 
 
 .container {
