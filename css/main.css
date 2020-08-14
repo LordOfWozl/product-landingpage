@@ -389,6 +389,7 @@ iframe {
   align-items: center;
   flex-flow: column nowrap;
   border:3px solid black;
+  margin-bottom: 300px;
 }
 
 .newsletter-group h2{
@@ -436,24 +437,31 @@ input[type=submit]{
   font-family: 'Nunito Sans', sans-serif;
   font-weight: normal;
   font-size: 19px; 
+  cursor: pointer;
 }
 
 
+/* -------------------------------------------
+3.0 - FOOTER 
+----------------------------------------------*/
 
 
+.footer-text{
+  text-align: left;
+  width: 766px;
+  color: black;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-bottom: 50px;
 
-
-.button {
-    padding: 0 16px;
-    height: 32px;
-    margin: 0 auto;
-    display: block;
-    text-transform: uppercase;
-    border: 0;
-    border-radius: 4px;
-    background-color: #303f9f;
-    color: #fff;
-    cursor: pointer;
+ /* transform: translate(20%, 50%);*/
 }
+
+.footer-text a{
+  color: hotpink;
+  text-decoration: none;
+}
+
+
 
 
