@@ -84,6 +84,14 @@ h2{
 }
 
 
+h3{
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  font-size: 21px; 
+  line-height: 160%;
+}
+
+
 p {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: normal;
@@ -297,7 +305,7 @@ a.nav-link:hover {
 /* -------------------------------------------
 2.5 - FEATURES 
 ----------------------------------------------*/
-.feature-text{
+.feature-heading{
   text-align: center;
   color: black;
   display: flex;
@@ -309,10 +317,10 @@ a.nav-link:hover {
   margin: 100px auto;
   width: 900px; */
 
-.feature-text h2 {
+.feature-heading h2 {
   max-width: 900px;
-  margin-top: 150px; 
-  margin-bottom: 150px;
+  margin-top: 200px; 
+  margin-bottom: 90px;
 }
 
 .feature-group{
@@ -320,9 +328,30 @@ a.nav-link:hover {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 200px;
+  justify-content: center;
+  border: 1px solid green;
 
 }
+
+.feature{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: left;
+  text-align: left;
+  max-width: 400px;
+  margin: 0px 40px;
+    border: 1px solid red;
+
+}
+
+
+/* -------------------------------------------
+2.5 - TESTIMONIALS 
+----------------------------------------------*/
+
+
+
+
 
 
 .container {
