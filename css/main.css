@@ -32,6 +32,7 @@ body {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 
@@ -256,7 +257,7 @@ a.nav-link:hover {
     margin-top: 150px; 
     margin-bottom: 150px;
   }
-}
+} 
 
 /* -------------------------------------------
 2.5 - PRODUCTS 
